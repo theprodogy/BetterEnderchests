@@ -1,0 +1,23 @@
+Summary for C:\EnderChestsMiniMSG\EnderChest-2.4.0.jar
+Decompiled with CFR 0.152
+
+
+com.fernsehheft.enderchest.RepairManager
+----------------------------
+
+readRaw(java.lang.String )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Started 2 blocks at once
+
+
+com.fernsehheft.enderchest.nbtapi.NBTCompound
+----------------------------
+
+getUUID(java.lang.String )
+  Loose catch block
+
+
+com.fernsehheft.enderchest.faststats.core.SimpleMetrics
+----------------------------
+
+submitNow()
+  Loose catch block

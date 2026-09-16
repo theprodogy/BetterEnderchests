@@ -1,0 +1,64 @@
+name: EnderChest
+main: com.fernsehheft.enderchest.EnderChest
+version: 2.4.0
+api-version: '1.21.11'
+folia-supported: true
+author: fernsehheft
+description: Custom Ender Chest with Ranks, Invites, Teams, Pages, Search, Blacklist and Migration.
+softdepend: [VariableEnderChests, QuickEC]
+commands:
+  ec:
+    description: Main command.
+    aliases: [enderchest]
+    usage: /ec [invite|uninvite|invitelist|search|page|reload|migrate|export|backup|autobackup]
+  ecshare:
+    description: Open a shared Ender Chest.
+    usage: /ecshare <player> [page]
+    permission: ec.share
+  ecsee:
+    description: Inspect another player's Ender Chest (Admin).
+    aliases: [enderchestsee]
+    usage: /ecsee <player> [page]
+    permission: ec.see
+  teamec:
+    description: Open your team's Ender Chest.
+    aliases: [teamenderchest, tec]
+    usage: /teamec
+    permission: ec.team
+permissions:
+  ec.use:
+    description: Open own Ender Chest.
+    default: true
+  ec.share:
+    description: Open shared Ender Chests.
+    default: true
+  ec.admin:
+    description: Allow reload, migration, slot management.
+    default: op
+  ec.see:
+    description: Inspect others without invite.
+    default: op
+  ec.team:
+    description: Use Team EnderChest.
+    default: true
+  ec.block:
+    description: Verhindert, dass der Spieler EnderChests öffnen kann.
+    default: false
+  ec.pages.1:
+    description: Access to page 1 of EnderChest.
+    default: true
+  ec.pages.2:
+    description: Access to page 2 of EnderChest.
+    default: false
+  ec.pages.3:
+    description: Access to page 3 of EnderChest.
+    default: false
+  ec.pages.4:
+    description: Access to page 4 of EnderChest.
+    default: false
+  ec.pages.5:
+    description: Access to page 5 of EnderChest.
+    default: false
+  ec.vanilla:
+    description: Bypass virtual/custom Ender Chest and use standard vanilla Ender Chest.
+    default: false

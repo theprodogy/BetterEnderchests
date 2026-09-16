@@ -1,0 +1,115 @@
+# Storage type: 'file' or 'mysql'
+# 'file': Saves data in /plugins/EnderChest/data/
+# 'mysql': Saves data in a MySQL database.
+storage-type: file
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  database: "minecraft"
+  username: "root"
+  password: "password"
+  table: "enderchest_data"
+  use-ssl: false
+  server-id: "server1"
+
+# Standard Size (Fallback)
+# 3 = 3 Rows (27 Slots)
+# 4 = 4 Rows (36 Slots)
+# 5 = 5 Rows (45 Slots)
+# 6 = 6 Rows (54 Slots)
+# Legacy: 1 = 3 Rows, 2 = 6 Rows
+size: 3
+
+# Custom Enderchest Size per Rank
+# Set 'enabled' to true to use this feature.
+# Value = number of rows (3-6). Highest rank wins.
+ranks:
+  enabled: true
+  groups:
+    # Format: "group_name: rows"
+    owner: 6
+    admin: 6
+    vip: 4
+
+# Vanilla Team EnderChest settings (/teamec)
+teams:
+  enabled: true
+  size: 2
+
+# Item Blacklist - Items that cannot be stored in EnderChest
+blacklist:
+  enabled: false
+  items:
+    - BEDROCK
+    - COMMAND_BLOCK
+    - BARRIER
+  message: '<red>This item cannot be stored in the EnderChest.'
+
+# Pages - Multiple pages for EnderChest storage
+pages:
+  enabled: false
+  max-pages: 3  # Maximum pages available (permission-based: ec.pages.1, ec.pages.2, etc.)
+
+# Admin-assigned EnderChest sizes (not permission-based)
+# Admins can use /ec setrows <player> <3-6> and /ec resetrows <player>
+# Data is stored in slot_upgrades.yml
+admin-assigned-rows:
+  enabled: true
+  default-rows: 3     # Default rows for players without special assignment (3-6)
+  max-rows: 6         # Maximum rows that can be assigned (3-6)
+
+# Admin-assigned Pages (not permission-based)
+# Admins can use /ec setpages <player> <1-max> and /ec resetpages <player>
+admin-assigned-pages:
+  enabled: true
+  default-pages: 1    # Default pages for players without special assignment
+  max-pages: 5        # Maximum pages that can be assigned
+
+permissions:
+  # If true, a player must have the 'ec.use' permission to open a PHYSICAL Ender Chest block.
+  require-use-permission: false
+
+  # If true, a player must have the 'ec.use' permission to open EnderChest via command (/ec, /enderchest).
+  # Set this to true if you want to block only virtual command access for selected groups.
+  require-use-permission-for-command: false
+
+  # If true, players with the permission 'ec.block' will no longer be able to open an Ender Chest.
+  enable-block-permission: true
+
+backups:
+  enabled: true
+  auto-enabled: false
+  auto-time: "04:00"
+  max-backups: 15
+  chat-announcements: true
+  # If true, an automatic safety backup (named 'pre-restore-...') is created
+  # right before every restore, so you can recover if a restore goes wrong.
+  safety-backup-before-restore: true
+  # Discord (or any Discord-compatible) webhook notifications for backup events.
+  webhook:
+    enabled: false
+    # Paste your Discord webhook URL here (Channel Settings -> Integrations -> Webhooks).
+    url: ""
+    # If true, a notification is also sent on successful backup/restore.
+    # If false, only failures are reported.
+    notify-on-success: false
+
+messages:
+  show-open-message: true
+  show-close-message: true
+
+sounds:
+  open: BLOCK_ENDER_CHEST_OPEN
+  close: BLOCK_ENDER_CHEST_CLOSE
+
+opening:
+  # Cooldown in seconds between EnderChest open attempts.
+  # Set to 0 to disable cooldown.
+  # This is spam protection only - duplication is prevented independently of it, so 0 is safe.
+  cooldown-seconds: 2.0
+
+# Autosave - Periodically saves open EnderChests to prevent data loss on crashes.
+autosave:
+  enabled: true
+  interval-seconds: 60

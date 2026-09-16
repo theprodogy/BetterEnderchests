@@ -1,0 +1,50 @@
+prefix: '<dark_purple><bold>ᴇɴᴅᴇʀᴄʜᴇꜱᴛ</bold> <dark_gray>» <gray>'
+no-permission: '<red>ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴅᴏ ᴛʜɪꜱ.'
+only-players: '<red>ᴏɴʟʏ ᴘʟᴀʏᴇʀꜱ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.'
+reload-success: '<green>ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ ʀᴇʟᴏᴀᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!'
+usage-ecsee: '<red>ᴜꜱᴀɢᴇ: <dark_purple>/ecsee <player> [page]'
+usage-ecshare: '<red>ᴜꜱᴀɢᴇ: <dark_purple>/ecshare <player> [page]'
+player-never-played: '<red>ᴘʟᴀʏᴇʀ {player} ʜᴀꜱ ɴᴇᴠᴇʀ ᴘʟᴀʏᴇᴅ ᴏɴ ᴛʜɪꜱ ꜱᴇʀᴠᴇʀ.'
+player-not-found: '<red>ᴘʟᴀʏᴇʀ ɴᴏᴛ ꜰᴏᴜɴᴅ.'
+chest-loaded: '<green>ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ ᴏꜰ <yellow>{player} <green>ʟᴏᴀᴅᴇᴅ.'
+chest-empty: '<gray>ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ ᴏꜰ {player} ɪꜱ ᴇᴍᴘᴛʏ ᴏʀ ʙᴇɪɴɢ ᴄʀᴇᴀᴛᴇᴅ.'
+chest-saved: '<green>ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ ꜱᴀᴠᴇᴅ.'
+chest-locked: '<red>ᴛʜɪꜱ ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ ɪꜱ ᴄᴜʀʀᴇɴᴛʟʏ ᴏᴘᴇɴ ᴏɴ ᴀɴᴏᴛʜᴇʀ ꜱᴇʀᴠᴇʀ!'
+max-size-warning: '<yellow>ᴍᴀxɪᴍᴜᴍ ꜱɪᴢᴇ ɪꜱ 6 ʀᴏᴡꜱ.'
+size-reduced-online: '<red>ꜱɪᴢᴇ ʀᴇᴅᴜᴄᴇᴅ. {count} ɪᴛᴇᴍꜱ ᴡᴇʀᴇ ᴅʀᴏᴘᴘᴇᴅ.'
+size-reduced-offline: '<red>ꜱɪᴢᴇ ʀᴇᴅᴜᴄᴇᴅ. {count} ɪᴛᴇᴍꜱ ᴡᴇʀᴇ ᴅᴇʟᴇᴛᴇᴅ (ᴘʟᴀʏᴇʀ ᴏꜰꜰʟɪɴᴇ).'
+error-fetch: '<red>ᴇʀʀᴏʀ ʟᴏᴀᴅɪɴɢ ᴅᴀᴛᴀ.'
+already-viewing: '<red>ʏᴏᴜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴠɪᴇᴡɪɴɢ ᴛʜɪꜱ ᴄʜᴇꜱᴛ.'
+open-cooldown: '<red>ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ <white>{seconds}ꜱ <red>ʙᴇꜰᴏʀᴇ ᴏᴘᴇɴɪɴɢ ʏᴏᴜʀ ᴇɴᴅᴇʀᴄʜᴇꜱᴛ ᴀɢᴀɪɴ.'
+
+# Migration
+migration-started: '<yellow>ᴍɪɢʀᴀᴛɪᴏɴ ꜱᴛᴀʀᴛᴇᴅ: {from} → {to}. ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...'
+migration-finished: '<green>ᴍɪɢʀᴀᴛɪᴏɴ ꜰɪɴɪꜱʜᴇᴅ! {count} ᴘʀᴏꜰɪʟᴇꜱ ᴍᴏᴠᴇᴅ.'
+migration-failed: '<red>ᴍɪɢʀᴀᴛɪᴏɴ ꜰᴀɪʟᴇᴅ! ᴄʜᴇᴄᴋ ᴄᴏɴꜱᴏʟᴇ.'
+migration-usage: '<red>ᴜꜱᴀɢᴇ: <dark_purple>/ec migrate <to-db|to-file|from-vec>'
+migration-vec-start: '<yellow>ꜱᴛᴀʀᴛɪɴɢ ɪᴍᴘᴏʀᴛ ꜰʀᴏᴍ ᴠᴀʀɪᴀʙʟᴇᴇɴᴅᴇʀᴄʜᴇꜱᴛꜱ...'
+migration-vec-not-found: '<red>ᴠᴀʀɪᴀʙʟᴇᴇɴᴅᴇʀᴄʜᴇꜱᴛꜱ ᴘʟᴜɢɪɴ ɴᴏᴛ ꜰᴏᴜɴᴅ! ɪᴛ ᴍᴜꜱᴛ ʙᴇ ɪɴꜱᴛᴀʟʟᴇᴅ.'
+
+# Invite System
+invite-usage: '<red>ᴜꜱᴀɢᴇ: <dark_purple>/ec invite <player> <red>| <dark_purple>/ec invite <all|number> <player> <red>| <dark_purple>/ec uninvite <player> <red>| <dark_purple>/ec invitelist'
+invite-added: '<green>ʏᴏᴜ ʜᴀᴠᴇ ɪɴᴠɪᴛᴇᴅ <yellow>{player} <green>ᴛᴏ ʏᴏᴜʀ ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ.'
+invite-removed: '<red>ʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴍᴏᴠᴇᴅ <yellow>{player} <green>ꜰʀᴏᴍ ʏᴏᴜʀ ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ.'
+invite-list: '<green>ᴘʟᴀʏᴇʀꜱ ᴡɪᴛʜ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ʏᴏᴜʀ ᴇᴄ: <gray>{list}'
+invite-no-access: '<red>ʏᴏᴜ ʜᴀᴠᴇ ɴᴏᴛ ʙᴇᴇɴ ɪɴᴠɪᴛᴇᴅ ᴛᴏ ᴛʜɪꜱ ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ.'
+invite-already: '<red>ᴛʜɪꜱ ᴘʟᴀʏᴇʀ ɪꜱ ᴀʟʀᴇᴀᴅʏ ɪɴᴠɪᴛᴇᴅ.'
+invite-not-invited: '<red>ᴛʜɪꜱ ᴘʟᴀʏᴇʀ ᴡᴀꜱ ɴᴏᴛ ɪɴᴠɪᴛᴇᴅ.'
+self-interact: '<red>ʏᴏᴜ ᴄᴀɴɴᴏᴛ ɪɴᴠɪᴛᴇ ʏᴏᴜʀꜱᴇʟꜰ.'
+share-not-invited: '<red>ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ {player}''ꜱ ᴇɴᴅᴇʀᴄʜᴇꜱᴛ.'
+
+# Inventory window titles use MiniMessage.
+# {page} / {pages} are only available in inventory-title-paged.
+inventory-title: 'ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ'
+inventory-title-paged: 'ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ <dark_gray>• <gray>ᴘᴀɢᴇ {page}/{pages}'
+
+# Team System
+team-no-team: '<red>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ ᴀ ᴠᴀɴɪʟʟᴀ ᴍɪɴᴇᴄʀᴀꜰᴛ ᴛᴇᴀᴍ (<dark_purple>/team<red>).'
+team-disabled: '<red>ᴛᴇᴀᴍ ᴇɴᴅᴇʀᴄʜᴇꜱᴛꜱ ᴀʀᴇ ᴅɪꜱᴀʙʟᴇᴅ.'
+team-title: '<light_purple>ᴛᴇᴀᴍ: <dark_purple>{team}'
+
+no-access: '<red>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴜꜱᴇ ᴀɴ ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ.'
+vanilla-bypass: '<red>ʏᴏᴜ ᴀʀᴇ ᴄᴏɴꜰɪɢᴜʀᴇᴅ ᴛᴏ ᴜꜱᴇ ᴛʜᴇ ᴠᴀɴɪʟʟᴀ ᴇɴᴅᴇʀ ᴄʜᴇꜱᴛ. ᴄᴏᴍᴍᴀɴᴅ ꜰᴇᴀᴛᴜʀᴇꜱ ᴀʀᴇ ᴅɪꜱᴀʙʟᴇᴅ.'
