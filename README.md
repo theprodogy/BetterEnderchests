@@ -1,6 +1,6 @@
 # EnderChest
 
-Paper plugin source project reconstructed from `EnderChest-2.4.0.jar`.
+This project is a fork and reconstruction of [EnderChest by fernsehheft](https://modrinth.com/plugin/enderchest), based on `EnderChest-2.4.0.jar`.
 
 ## Layout
 
