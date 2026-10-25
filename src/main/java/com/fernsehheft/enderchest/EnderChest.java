@@ -209,6 +209,14 @@ TabCompleter {
         return value == null ? "" : value.trim();
     }
 
+    public void onLoad() {
+        // The plugin was renamed from EnderChest; carry its data folder over once so no chests are lost.
+        File oldFolder = new File(this.getDataFolder().getParentFile(), "EnderChest");
+        if (!this.getDataFolder().exists() && oldFolder.isDirectory() && !oldFolder.renameTo(this.getDataFolder())) {
+            this.getLogger().severe("Could not move plugins/EnderChest to plugins/" + this.getDataFolder().getName() + "; move it manually.");
+        }
+    }
+
     public void onEnable() {
         this.foliaLib = new PaperScheduler(this);
         this.sendConsole("\u00a75________________________________________________________");

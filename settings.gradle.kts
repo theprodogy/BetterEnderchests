@@ -1,1 +1,1 @@
-rootProject.name = "EnderChest"
+rootProject.name = "BetterEnderchests"

@@ -531,7 +531,7 @@ public class BackupManager {
         try {
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
-            conn.setRequestProperty("User-Agent", "EnderChest-Plugin");
+            conn.setRequestProperty("User-Agent", "BetterEnderchests-Plugin");
             conn.setConnectTimeout(5000);
             conn.setReadTimeout(5000);
             conn.setDoOutput(true);

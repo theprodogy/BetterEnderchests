@@ -1,6 +1,6 @@
-# EnderChest
+# BetterEnderchests
 
-EnderChest gives Paper servers a configurable virtual Ender Chest. Players can open their own storage with `/ec`, unlock additional pages, share access with other players, and use a separate team chest. Server owners can control chest size, access, item restrictions, backups, and data migration through configuration.
+BetterEnderchests gives Paper servers a configurable virtual Ender Chest. Players can open their own storage with `/ec`, unlock additional pages, share access with other players, and use a separate team chest. Server owners can control chest size, access, item restrictions, backups, and data migration through configuration.
 
 ## Features
 
@@ -14,14 +14,15 @@ EnderChest gives Paper servers a configurable virtual Ender Chest. Players can o
 
 ## Compatibility
 
-EnderChest targets Paper 1.21.11 and supports Folia. It is intended for Paper-compatible servers.
+One JAR supports Paper and Folia from 1.21.11 through 26.3, on Java 21 or newer.
 
 ## Installation
 
-1. Download `EnderChest-2.4.0.jar` from the [latest release](https://github.com/theprodogy/BetterEnderchests/releases/latest).
+1. Download `BetterEnderchests.jar` from the [latest release](https://github.com/theprodogy/BetterEnderchests/releases/latest).
 2. Place the JAR in the server’s `plugins` directory.
 3. Restart the server.
-4. Edit the generated `plugins/EnderChest/config.yml` and `messages.yml` to fit the server.
+4. Upgrading from EnderChest: remove the old JAR. The existing `plugins/EnderChest` folder is moved to `plugins/BetterEnderchests` on first start.
+5. Edit the generated `plugins/BetterEnderchests/config.yml` and `messages.yml` to fit the server.
 
 ## Commands
 
@@ -58,13 +59,13 @@ Administrators can also use `/ec reload`, `/ec migrate`, `/ec export`, `/ec back
 
 ## Development
 
-Build with JDK 25:
+Build with JDK 25 (the output is Java 21 bytecode):
 
 ```bash
 ./gradlew build
 ```
 
-The deployable shaded JAR is written to `build/libs/EnderChest-2.4.0.jar`.
+The deployable shaded JAR is written to `build/libs/BetterEnderchests.jar`. It compiles against the 1.21.11 API; to check against the newest API run `./gradlew compileJava -PpaperApi=26.3.build.223-stable -PjavaRelease=25`.
 
 ## Upstream project
 
