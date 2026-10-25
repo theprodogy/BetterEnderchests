@@ -3,3 +3,8 @@ build/
 out/
 *.iml
 .idea/
+*.zip
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+.claude/
+.remember/

@@ -17,9 +17,10 @@ repositories {
 }
 
 dependencies {
-    // Java 25 is the project's selected runtime target.
-    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    implementation("de.tr7zw:item-nbt-api:2.16.0")
+    // Built against the oldest supported API (1.21.11); runs unchanged on 26.1-26.3.
+    // `-PpaperApi=26.3.build.223-stable -PjavaRelease=25` compile-checks against the newest API.
+    compileOnly("io.papermc.paper:paper-api:${findProperty("paperApi") ?: "1.21.11-R0.1-SNAPSHOT"}")
+    implementation("de.tr7zw:item-nbt-api:2.16.1")
 }
 
 java {
@@ -29,7 +30,8 @@ java {
 tasks {
     compileJava {
         options.encoding = "UTF-8"
-        options.release.set(25)
+        // 1.21.11 servers run Java 21, 26.x needs Java 25; release 21 bytecode loads on both.
+        options.release.set((findProperty("javaRelease") as String? ?: "21").toInt())
         options.compilerArgs.addAll(listOf("-Xlint:all"))
     }
 
@@ -39,6 +41,7 @@ tasks {
 
     shadowJar {
         archiveClassifier.set("")
+        archiveVersion.set("")
         relocate("de.tr7zw.changeme.nbtapi", "com.fernsehheft.enderchest.nbtapi")
     }
 
